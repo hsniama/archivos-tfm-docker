@@ -1,0 +1,9 @@
+
+
+  Target     │  nginx-hardened:latest  │    0C     0H     0M     0L   
+    digest   │  940d04d976cd           │                              
+  Base image │  nginx:1.28-alpine      │    0C     0H     0M     0L   
+
+What's next:
+    Include policy results in your quickview by supplying an organization → docker scout quickview nginx-hardened:latest --org <organization>
+
