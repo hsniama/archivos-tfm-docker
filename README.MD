@@ -13,13 +13,15 @@ En él se incluyen imágenes Docker hardenizadas, resultados de escaneos previos
 ### `/EscaneoInicial/`
 Contiene los resultados de los escaneos de vulnerabilidades realizados **antes de aplicar el hardening**, tanto para:
 
-- `devops-microservice` imagen de proyecto personal.
-- `nginx` imagen oficial.
+- `devops-microservice`: imagen de proyecto personal.
+- `nginx`: imagen oficial.
+- `Docker Host`: entorno docker 
 
 Incluye salidas de herramientas como:
 
 - `Trivy`
 - `Docker Scout`
+- `Docker CIS benchmark`
 
 ---
 
@@ -28,6 +30,7 @@ Contiene los resultados de escaneo **después de aplicar las prácticas de segur
 
 - `devops-microservice` hardenizado
 - `nginx` hardenizado
+- `Docker Host`: hardenizado
 
 ---
 
