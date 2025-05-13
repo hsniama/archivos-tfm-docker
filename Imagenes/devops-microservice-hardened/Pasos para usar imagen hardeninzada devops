@@ -1,0 +1,43 @@
+Para probar las 2 imagenes hardenizadas tanto la de NGINX como la de devops-microservice,
+hacer los siguientes pasos:
+
+1. Descargar la imagen con el siguiente comando:
+
+    docker pull hsniama98/devops-microservice-hardened:latest
+
+2. Una ves descargada, usar el siguiente comando para ver la imagen:
+
+    docker images
+
+3. Luego Correla:
+    
+    docker run --name devops-microservice -p 8000:8000 --env SECRET_KEY=clave_super_secreta_segura --env API_KEY=2f5ae96c-b558-4c7b-a590-a501ae1c3f6c hsniama98/devops-microservice-hardened:latest
+
+4. Verificación: 
+
+    docker ps -a | grep devops-microservice-secure
+
+5. Prueba de funcionamiento:
+   
+    a. Ejecutar:
+
+        curl -X GET http://localhost:8000/generate-jwt
+    
+        o ir al navegador ir pegar: http://localhost:8000/generate-jwt
+    
+
+    b. curl -X POST http://localhost:8000/DevOps \
+            -H "X-Parse-REST-API-Key: 2f5ae96c-b558-4c7b-a590-a501ae1c3f6c" \
+            -H "X-JWT-KWY: Aquí va la salida del CURL Anterior" \
+            -H "Content-Type: application/json" \
+            -d '{
+                "message": "Hola",
+                "to": "Henry",
+                "from": "Azure",
+                "timeToLifeSec": 45
+            }'
+
+        o usar http://localhost:8000/docs el metodo POST, en donde, llenas el API-KEY y el JWT headers y ejecutas. 
+
+
+5. Si la imagen se ha cargado correctamente, deberías ver los resultados.

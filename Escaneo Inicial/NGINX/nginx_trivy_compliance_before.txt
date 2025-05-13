@@ -1,0 +1,23 @@
+
+Summary Report for compliance: CIS Docker Community Edition Benchmark v1.6.0
+┌──────┬──────────┬──────────────────────────────────────────────────────────────┬────────┬────────┐
+│  ID  │ Severity │                         Control Name                         │ Status │ Issues │
+├──────┼──────────┼──────────────────────────────────────────────────────────────┼────────┼────────┤
+│ 4.1  │   HIGH   │ Ensure a user for the container has been created             │  FAIL  │   1    │
+│ 4.2  │   HIGH   │ Ensure that containers use only trusted base images (Manual) │   -    │   -    │
+│ 4.3  │   HIGH   │ Ensure unnecessary packages are not installed in the         │   -    │   -    │
+│      │          │ container (Manual)                                           │        │        │
+│ 4.4  │ CRITICAL │ Ensure images are scanned and rebuilt to include security    │  FAIL  │   1    │
+│      │          │ patches                                                      │        │        │
+│ 4.5  │   LOW    │ Ensure Content trust for Docker is Enabled (Manual)          │   -    │   -    │
+│ 4.6  │   LOW    │ Ensure HEALTHCHECK instructions have been added to the       │  FAIL  │   1    │
+│      │          │ container image                                              │        │        │
+│ 4.7  │   HIGH   │ Ensure update instructions are not used alone in the         │  PASS  │   0    │
+│      │          │ Dockerfile                                                   │        │        │
+│ 4.8  │   HIGH   │ Ensure setuid and setgid permissions are removed in the      │   -    │   -    │
+│      │          │ images (Manual)                                              │        │        │
+│ 4.9  │   LOW    │ Ensure COPY is used instead of ADD                           │  PASS  │   0    │
+│ 4.10 │ CRITICAL │ Ensure secrets are not stored in Dockerfiles                 │  PASS  │   0    │
+│ 4.11 │  MEDIUM  │ Ensure only verified packages are installed (Manual)         │   -    │   -    │
+│ 4.12 │  MEDIUM  │ Ensure all signed artifacts are validated (Manual)           │   -    │   -    │
+└──────┴──────────┴──────────────────────────────────────────────────────────────┴────────┴────────┘

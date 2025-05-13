@@ -1,0 +1,10 @@
+
+
+  Target     │  devops-microservice-hardened:latest  │    0C     2H     0M     0L   
+    digest   │  55325dca8290                         │                              
+  Base image │  python:3-alpine                      │    0C     0H     0M     0L   
+
+What's next:
+    View vulnerabilities → docker scout cves devops-microservice-hardened
+    Include policy results in your quickview by supplying an organization → docker scout quickview devops-microservice-hardened --org <organization>
+

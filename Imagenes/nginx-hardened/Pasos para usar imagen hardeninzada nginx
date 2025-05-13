@@ -1,0 +1,16 @@
+Para probar las 2 imagenes hardenizadas tanto la de NGINX como la de devops-microservice,
+hacer los siguientes pasos:
+
+1. Descargar la imagen (.tar) y ubicarla en una ubicación de tu computador.
+2. Una ves descargada, usar el siguiente comando para cargar la imagen (Ejemplo con nginx):
+    Si estas en windows:
+    docker load -i C:\Users\TuUsuario\Descargas\nginx-hardenized.tar
+
+    Si estas en Linux:
+    docker load -i /home/TuUsuario/Descargas/nginx-hardenized.tar
+
+3. Luego Correrla:
+    docker run -d --name nginx-secure -p 8080:8080 nginx-hardened
+4. Verificación: 
+    curl http://localhost:8080/
+5. Si la imagen se ha cargado correctamente, deberías ver el mensaje de bienvenida de NGINX.

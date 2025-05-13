@@ -1,0 +1,41 @@
+
+
+## Overview
+
+                    │            Analyzed Image              
+────────────────────┼────────────────────────────────────────
+  Target            │  devops-microservice-hardened:latest   
+    digest          │  55325dca8290                          
+    platform        │ linux/amd64                            
+    vulnerabilities │    0C     2H     0M     0L             
+    size            │ 187 MB                                 
+    packages        │ 90                                     
+
+
+## Packages and Vulnerabilities
+
+   0C     2H     0M     0L  gunicorn 21.2.0
+pkg:pypi/gunicorn@21.2.0
+
+    ✗ HIGH CVE-2024-1135 [Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')]
+      https://scout.docker.com/v/CVE-2024-1135?s=github&n=gunicorn&t=pypi&vr=%3C22.0.0
+      Affected range : <22.0.0                                       
+      Fixed version  : 22.0.0                                        
+      CVSS Score     : 8.2                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N  
+    
+    ✗ HIGH CVE-2024-6827 [Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')]
+      https://scout.docker.com/v/CVE-2024-6827?s=github&n=gunicorn&t=pypi&vr=%3C23.0.0
+      Affected range : <23.0.0                                       
+      Fixed version  : 23.0.0                                        
+      CVSS Score     : 7.5                                           
+      CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N  
+    
+
+
+2 vulnerabilities found in 1 package
+  CRITICAL  0  
+  HIGH      2  
+  MEDIUM    0  
+  LOW       0  
+

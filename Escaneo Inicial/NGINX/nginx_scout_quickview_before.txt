@@ -1,0 +1,13 @@
+
+
+  Target             │  nginx:latest        │    0C     3H     1M    58L     2?   
+    digest           │  a830707172e8        │                                     
+  Base image         │  debian:12-slim      │    0C     0H     0M    24L          
+  Updated base image │  debian:stable-slim  │    0C     0H     0M    24L          
+                     │                      │                                     
+
+What's next:
+    View vulnerabilities → docker scout cves nginx:latest
+    View base image update recommendations → docker scout recommendations nginx:latest
+    Include policy results in your quickview by supplying an organization → docker scout quickview nginx:latest --org <organization>
+
