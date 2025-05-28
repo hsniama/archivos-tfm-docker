@@ -43,7 +43,10 @@ Contiene las imágenes Docker exportadas en formato `.tar` listas para ser compa
 
 ## 🚀 ¿Cómo usar las imágenes hardenizadas?
 
-### 1. Descargar la imagen `.tar` y ubicarla en tu equipo.
+### 1. Descargar la imagen `.tar` y ubicala en tu equipo  si no descargalas directamente desde Docker Hub:
+```bash
+https://hub.docker.com/repositories/hsniama98
+```
 
 ### 2. Cargar la imagen en Docker:
 
