@@ -9,8 +9,12 @@ hacer los siguientes pasos:
     Si estas en Linux:
     docker load -i /home/TuUsuario/Descargas/nginx-hardenized.tar
 
+    O tambien se puede usar:
+    sudo docker pull hsniama98/nginx-hardened:v1
+
 3. Luego Correrla:
-    docker run -d --name nginx-secure -p 8080:8080 nginx-hardened
+    sudo docker run -d --name nginx-secure -p 8080:80 hsniama98/nginx-hardened:v1
+
 4. Verificación: 
     curl http://localhost:8080/
 5. Si la imagen se ha cargado correctamente, deberías ver el mensaje de bienvenida de NGINX.
